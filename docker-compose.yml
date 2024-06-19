@@ -6,22 +6,22 @@ services:
     ports:
       - 81:80
     deploy:
-      replicas: 3
+      replicas: 1
   train:
     image: bsal694/train:latest
     ports:
       - 82:80
     deploy:
-      replicas: 3
+      replicas: 1
   dth:
     image: bsal694/dth:latest
     ports:
       - 83:80
     deploy:
-      replicas: 3
+      replicas: 1
   recharge:
     image: bsal694/recharge:latest
     ports:
       - 84:80
     deploy:
-      replicas: 3
+      replicas: 1
